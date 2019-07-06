@@ -1,0 +1,31 @@
+﻿<div class="container">
+    @model User
+    <form asp-action="Submission" asp-controller="Home" method="post">
+        <div class="form-group">
+            <span style="color: red;" asp-validation-for="fname"></span>
+            <label asp-for="fname" for="exampleInputEmail1">First Name:</label>
+            <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" asp-for="fname" placeholder="Enter first name">
+        </div>
+        <div class="form-group">
+            <span style="color: red;" asp-validation-for="lname"></span>
+            <label asp-for="lname" for="exampleInputEmail1">Last Name:</label>
+            <input asp-for="lname" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter last name">
+        </div>
+        <div class="form-group">
+            <span style="color: red;" asp-validation-for="age"></span>
+            <label asp-for="age" for="exampleInputEmail1">Age:</label>
+            <input asp-for="age" type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter age">
+        </div>
+        <div class="form-group">
+            <span style="color: red;" asp-validation-for="email"></span>
+            <label asp-for="email" for="exampleInputEmail1">Email Address:</label>
+            <input asp-for="email" type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+            <span style="color: red;" asp-validation-for="password"></span>
+            <label asp-for="password" for="exampleInputEmail1">Password:</label>
+            <input asp-for="password" type="password" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter password">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
